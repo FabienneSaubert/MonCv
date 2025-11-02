@@ -7,15 +7,9 @@
       name="description"
       content="Curriculum vitæ de Fabienne Saubert pour poste de Développeur Web"
     />
-    <link rel="icon" type="image/png" href="/images/InitialesFavi.png" />
-    <link
-      rel="preload"
-      href="/style.css"
-      as="style"
-      onload="this.rel='stylesheet'"
-    />
-    <link rel="stylesheet" href="/style.css" />
-    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <link rel="icon" type="image/png" href="./images/InitialesFavi.png" />
+    <link rel="stylesheet" href="./minified.css" />
+    <link rel="stylesheet" href="./minifiedOutput.css" />
     <title>CV - Fabienne Saubert</title>
   </head>
 
@@ -25,8 +19,8 @@
       <section
         class="grid grid-cols-1 md:grid-cols-3 items-center border-b-2 border-indigo-300 pb-8 mb-10"
       >
-        <div id="conteneurToggle" aria-label="Zone d'activation du mode sombre">
-          <label class="switch">
+        <div id="conteneurToggle">
+          <label class="switch" aria-label="Switch mode sombre">
             <input type="checkbox" id="btnSombre" />
             <span class="slider"></span>
           </label>
@@ -49,7 +43,7 @@
               <b>Mail :</b>
               <a
                 href="mailto:fabienne.saubert@gmail.com"
-                class="hover:text-indigo-600 hover:translate-x-1 inline-block transition-transform duration-200"
+                class="hover:text-indigo-600 hover:translate-x-1 inline-block transition-transform duration-200 underline"
                 >fabienne.saubert@gmail.com</a
               >
             </li>
@@ -146,7 +140,7 @@
             <tr>
               <td>
                 <img
-                  src="/images/logoHTML.webp"
+                  src="./images/logoHTML.webp"
                   alt="Logo HTML"
                   class="w-15"
                   title="HTML"
@@ -154,7 +148,7 @@
               </td>
               <td>
                 <img
-                  src="/images/logoCSS.webp"
+                  src="./images/logoCSS.webp"
                   alt="Logo CSS"
                   class="w-15"
                   title="CSS"
@@ -162,7 +156,7 @@
               </td>
               <td>
                 <img
-                  src="/images/logoJS.webp"
+                  src="./images/logoJS.webp"
                   alt="Logo Javascript"
                   class="w-15"
                   title="Javascript"
@@ -170,7 +164,7 @@
               </td>
               <td>
                 <img
-                  src="/images/PHP-logo.webp"
+                  src="./images/PHP-logo.webp"
                   alt="Logo PHP"
                   class="w-25"
                   title="PHP"
@@ -178,7 +172,7 @@
               </td>
               <td>
                 <img
-                  src="/images/logoREACT.webp"
+                  src="./images/logoREACT.webp"
                   alt="Logo React"
                   title="React"
                   class="w-22"
@@ -188,7 +182,7 @@
             <tr>
               <td>
                 <img
-                  src="/images/logoVS.webp"
+                  src="./images/logoVS.webp"
                   alt="Logo VS Code"
                   class="w-15"
                   title="VS Code"
@@ -196,7 +190,7 @@
               </td>
               <td>
                 <img
-                  src="/images/logoTRELLO.webp"
+                  src="./images/logoTRELLO.webp"
                   alt="Logo Trello"
                   class="w-15"
                   title="Trello"
@@ -204,7 +198,7 @@
               </td>
               <td>
                 <img
-                  src="/images/logoGIT.webp"
+                  src="./images/logoGIT.webp"
                   alt="Logo Git"
                   class="w-15"
                   title="GitHub"
@@ -212,7 +206,7 @@
               </td>
               <td>
                 <img
-                  src="/images/logoDOCKER.webp"
+                  src="./images/logoDOCKER.webp"
                   alt="Logo de Docker"
                   title="Docker"
                   class="w-18"
@@ -220,7 +214,7 @@
               </td>
               <td>
                 <img
-                  src="/images/logoSYMFONY.webp"
+                  src="./images/logoSYMFONY.webp"
                   alt="Logo Symfony"
                   class="w-15"
                   title="Symfony"
@@ -230,7 +224,7 @@
             <tr>
               <td>
                 <img
-                  src="/images/logoTAILWIND.webp"
+                  src="./images/logoTAILWIND.webp"
                   alt="Logo Tailwind"
                   class="w-20"
                   title="Tailwind"
@@ -238,7 +232,7 @@
               </td>
               <td>
                 <img
-                  src="/images/logoBOOTSTRAP.webp"
+                  src="./images/logoBOOTSTRAP.webp"
                   alt="Logo Bootstrap"
                   class="w-20 -ml-2"
                   title="Bootstrap"
@@ -247,7 +241,7 @@
 
               <td>
                 <img
-                  src="/images/logoSQL.webp"
+                  src="./images/logoSQL.webp"
                   alt="Logo SQL"
                   class="w-15"
                   title="SQL"
@@ -255,7 +249,7 @@
               </td>
               <td>
                 <img
-                  src="/images/logoMYSQL.webp"
+                  src="./images/logoMYSQL.webp"
                   alt="Logo MySQL"
                   class="w-22"
                   title="MySQL"
@@ -263,7 +257,7 @@
               </td>
               <td>
                 <img
-                  src="/images/logoGREEN.webp"
+                  src="./images/logoGREEN.webp"
                   alt="Logo >Green Code"
                   class="w-18"
                   title="Green Code"
@@ -286,7 +280,14 @@
               <li>
                 Troisième version : ajout d'un script.js pour le mode sombre
               </li>
-              <li>Lien GitHub :</li>
+              <li>
+                Lien GitHub :
+                <a
+                  class="hover:text-indigo-600 hover:translate-x-1 inline-block transition-transform duration-200 underline lienGit"
+                  href="https://github.com/FabienneSaubert/MonCv.git"
+                  >Repository MonCV</a
+                >
+              </li>
             </ul>
           </article>
 
@@ -345,26 +346,26 @@
             </h2>
             <div class="flex gap-x-6 justify-center md:justify-center">
               <a
-                class="hover:rotate-3 duration-200"
+                class="hover:rotate-8 duration-200"
                 href="https://github.com/FabienneSaubert/"
                 target="_blank"
-                rel="noopener"
+                rel="noopener noreferrer"
               >
                 <img
-                  src="/images/LogoGithub.webp"
+                  src="./images/LogoGithub.webp"
                   alt="GitHub"
                   class="h-auto w-14"
                   loading="lazy"
                 />
               </a>
               <a
-                class="hover:rotate-3 duration-200"
+                class="hover:rotate-8 duration-200"
                 href="https://www.linkedin.com/in/fabienne-saubert"
                 target="_blank"
-                rel="noopener"
+                rel="noopener noreferrer"
               >
                 <img
-                  src="/images/linkedin-logo-240x212.webp"
+                  src="./images/linkedin-logo-240x212.webp"
                   alt="LinkedIn"
                   class="h-auto w-14"
                   loading="lazy"
@@ -375,6 +376,6 @@
         </div>
       </footer>
     </div>
-    <script src="/script.js" defer></script>
+    <script src="./script.js" defer></script>
   </body>
 </html>
